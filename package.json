@@ -1,0 +1,15 @@
+{
+    "name": "local-ipv4-address",
+    "version": "0.0.0",
+    "description": "Get the local network IPv4 address of the local computer based on the default gateway",
+    "author": "Ben Hutchison <ben@aldaviva.com>",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Aldaviva/local-ipv4-address"
+    },
+    "keywords": [ "ip", "ipv4", "address", "ip-address", "ip address", "LAN", "local", "localhost", "route", "netstat" ],
+    "dependencies": {
+        "q": "1.5.0"
+    }
+}
