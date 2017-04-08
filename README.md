@@ -5,11 +5,7 @@ Get the local network IPv4 address of the current computer based on the default 
 
 All of the other Node.js modules I found picked the address of the first or a random external interface from `os.networkInterfaces()`, or did a reverse DNS lookup on the hostname. What if I have some loopback interfaces, VMware virtual interfaces, an OpenVPN connection, wifi, and an ethernet cable all connected? I sure don't want to tell some LAN user to access my web server at `127.0.1.1`.
 
-This module chooses the local IP address based on the interface that contains the default gateway.
-
 Under the hood, it just executes `route.exe`, `netstat`, or `ifconfig` and parses the output with regular expressions.
-
-Tested on Windows, Linux, Mac OS, and FreeBSD.
 
 ## Installation
 
