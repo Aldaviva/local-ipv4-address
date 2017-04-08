@@ -3,9 +3,9 @@ local-ipv4-address
 
 Get the local network IPv4 address of the current computer based on the default gateway.
 
-All of the other Node.js modules I found picked the address of the first or a random external interface from `os.networkInterfaces()`, or did a reverse DNS lookup on the hostname. What if I have some loopback interfaces, VMware virtual interfaces, an OpenVPN connection, wifi, and an ethernet cable all connected? I sure don't want to tell some LAN user to access my web server at `127.0.1.1`.
+All of the other Node.js modules I found picked the address of the first or a random external interface from `os.networkInterfaces()` or performed a DNS lookup on the hostname. What if I have VMware virtual interfaces, an OpenVPN connection, wifi, an ethernet cable, and some loopback interfaces with convincing-looking hosts entries all connected?
 
-Under the hood, it just executes `route.exe`, `netstat`, or `ifconfig` and parses the output with regular expressions.
+Under the hood, it just executes `route.exe` or `netstat` and parses the output with regular expressions.
 
 ## Installation
 
@@ -29,7 +29,6 @@ localIpV4Address().then(function(ipAddress){
 ### On the command line
 
 ```bash
-
 $ node node_modules/local-ipv4-address
 10.4.4.137
 ```

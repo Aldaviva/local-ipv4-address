@@ -1,6 +1,6 @@
 {
     "name": "local-ipv4-address",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "Get the local network IPv4 address of the local computer based on the default gateway",
     "author": "Ben Hutchison <ben@aldaviva.com>",
     "license": "Apache-2.0",
